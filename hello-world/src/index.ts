@@ -1,5 +1,11 @@
-let age: number = 20
-if (age < 50) {
-    age += 10
+let employee: {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+} = {
+    id: 1, 
+    name: "Mosh",
+    retire: (date: Date) => {
+        console.log(date)
+    }
 }
-console.log(age)
